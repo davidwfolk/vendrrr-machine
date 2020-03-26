@@ -1,7 +1,7 @@
 export default class Money {
 
-  constructor() {
-
+  constructor(data) {
+    this.money = data.money
   }
 }
 console.log("money is linked");

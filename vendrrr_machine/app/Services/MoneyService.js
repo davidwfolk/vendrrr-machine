@@ -1,12 +1,12 @@
-import Money from "../Models/Money.js"
-import _store from "../store.js"
+import Money from "../Models/Money.js";
+import _store from "../store.js";
+
 class MoneyService {
-
-  constructor() {
-
+  addQuarter() {
+    _store.State.money[0].count += 0.25;
   }
 }
-console.log("moneyservice is linked")
 
-const MONEYSERVICE = new MoneyService()
-export default MONEYSERVICE
+const MONEY = new MoneyService();
+
+export default MONEY;

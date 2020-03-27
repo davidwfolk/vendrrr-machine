@@ -1,12 +1,13 @@
 import ValuesController from "./Controllers/ValuesController.js";
 import MoneyController from "./Controllers/MoneyController.js";
-import SnackController from "./Controllers/SnackContoller.js"
+import SnacksController from "./Controllers/SnacksContoller"
 
 class App {
   valuesController = new ValuesController();
-  moneyController = new MoneyController();
-  snackController = new SnackController()
 
+  moneyController = new MoneyController();
+
+  snacksController = new SnacksController();
 }
 
 window["app"] = new App();
